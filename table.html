@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-rowColn</title>
+</head>
+<style>
+    table,tr,td{
+        border:2px solid black;
+        text-align: center;    
+        font-size: larger;
+        border-collapse:collapse;
+        background-color: aliceblue;
+    }
+    table{
+        width:500px;
+        height:500px;
+        position: relative;
+        left:30%;
+        margin-top:40px;
+        border-width: 3px;
+
+    }
+   
+</style>
+<body>
+    <table>
+        <tr>
+             <td colspan="2">
+                Heading
+             </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Side
+            </td>
+            <td>
+                Body
+            </td>
+        </tr>
+        <tr>
+            <td>Footer</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>

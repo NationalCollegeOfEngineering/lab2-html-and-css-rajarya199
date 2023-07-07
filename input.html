@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-inputs</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form-Input</title>
+</head>
+<style>
+    form{
+        padding:20px;
+        display:flex;
+        align-items: center;
+  justify-content: center
+
+    }
+    legend{
+        font-size: larger;
+    }
+    fieldset{
+        padding:20px;
+    }
+    div{
+        padding:10px;
+        display:flex;
+        flex-wrap: wrap;
+        font-size: large;
+    }
+    .abc{
+        margin:5px;
+        justify-content: space-between;
+    
+    }
+    .btn1{
+        background-color: green;
+        color:white;
+        font-size: 22px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+
+    }
+    .btn2{
+        background-color:red;
+        color:white;
+        font-size: 22px;
+        border-radius:5px;
+        cursor: pointer;
+        
+    }
+</style>
+<body>
+    <form action="" method="post">
+<fieldset>
+    <legend>Information</legend>
+<div>
+    <label for="name"> User Name:</label>
+    <input type="text" id="name"  name="name" placeholder="enter your name"> 
+</div>
+    
+<div>
+    <label for="email"> E-mail:</label>
+    <input type="email" id="email"  name="email" placeholder="your email"> 
+</div>
+   
+<div>
+    <label for="password"> Password:</label>
+    <input type="password" id="password" name="password"> 
+</div>
+  
+
+    <div>
+        Gender:<br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male"> Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female"> Female</label>
+    </div>
+   
+    <div>
+        <label for="dob"> Birthdate:</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+
+    <div>
+        <label for="mobno">Phone Number:</label>
+        <input type="tel" id="mobno" name="mobno">
+    </div>
+    <div>
+        <label for="ward"> Ward no :</label>
+        <input type="number" id="ward" name="ward" min="1" max="32" step="1">
+
+    </div>
+    <div>
+        Languages Spoken:
+        <input type="checkbox"  name="lang" value="nepali">Nepali
+        <input type="checkbox" name="lang" value="english">English
+    </div>
+
+
+    <div>
+        <label for="wtime"> wakeup time :</label>
+        <input type="time" id="wtime">
+    </div>
+    <div>
+        <label for="fcolor"> Favourite Color :</label>
+        <input type="color" id="fcolor" name="fcolor">
+    </div>
+    <div>
+        <label for="ctz" > upload Citizenship :</label>
+         <input type="file" id="ctz" name="ctz" >
+    </div>
+    <div>
+        <label for="search">Search here :</label>
+        <input type="search" id="search">
+    </div>
+    
+
+<div>
+    Note:hidden input is not seen but data is sent when form is submitted 
+    <input type="hidden" id="userId" name="userId" value="123">
+</div>
+        <div class="abc">
+            <input class="btn1" type="submit" value="Submit">
+            <input  class='btn2' type="button" value="cancel">
+            <input  class='btn1' type="reset">
+        </div>
+
+</fieldset>
+    </form>
+</body>
+</html>
